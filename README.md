@@ -31,18 +31,24 @@ Output
 ======
 
 For functions that return only a single post, such as `getInstaByShortcode` the returned data will be a dictionary array inside `data`. For example:
-`<?php
+
+```
+<?php
 	$instagrams = getInstaByShortcode('my-shortcode');
 	var_dump($instagrams->data);
-?>`
+?>
+```
 
 The other methods that return more than one post will be similar, but you will have to loop through the data. For example:
-`<?php
+
+```
+<?php
 	$instagrams = getInstaFeed(5);
 	foreach($instagrams->data as $insta){
 		var_dump($insta);
 	}
-?>`
+?>
+```
 
 You can look through the dump or read up on Instagram's API documentation to find out more about the returned data and how to retrieve it. 
 
@@ -51,4 +57,5 @@ About
 =====
 
 Version: 1.0
+
 Written by Joel Rainwater of Pyxl - <http://www.thinkpyxl.com>
