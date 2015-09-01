@@ -59,3 +59,9 @@ About
 Version: 1.0
 
 Written by Joel Rainwater of Pyxl - <http://www.thinkpyxl.com>
+
+
+TODO
+====
+
+Add caching capabilities to reduce API calls
